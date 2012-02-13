@@ -5,9 +5,6 @@ description: API to retrieve agents and user info
 categories: api_docs
 ---
 
-Users API
-=========
-
 ### Retrieve Confirmed Agents of a company
 
 #### GET /users.json

@@ -60,8 +60,8 @@ Success: 201
 
 #### POST Data
 
-````
- {
+{% highlight javascript %}
+  {
   "reply":{
     "content_attributes":{
       "body_html":"<p>Reply Content</p>",
@@ -69,8 +69,8 @@ Success: 201
       "attachment_ids":[]
     }
   }
- } 
-````
+ }  
+{% endhighlight %}  
 
 The POST data must contain either "body" or "body_html". Take a looks at
 Attachment API to see how to upload attachments to SupportBee
@@ -79,8 +79,8 @@ Attachment API to see how to upload attachments to SupportBee
 
 POST /tickets/1/replies.json
 
-````
-{
+{% highlight javascript %}
+  {
 "reply":{
   "id":3,
   "created_at":"2012-01-20T04:03:09Z",
@@ -111,8 +111,7 @@ POST /tickets/1/replies.json
   }
  }
 }
-````
-
+{% endhighlight %}  
 
 ### Retriving Comments
 
@@ -123,8 +122,8 @@ POST /tickets/1/replies.json
 
 GET /tickets/1/comments.json
 
-````
-{
+{% highlight javascript %}
+  {
   "comments":[
     {
       "id":1,
@@ -154,8 +153,8 @@ GET /tickets/1/comments.json
       }
     }
   ]
-}
-````
+}  
+{% endhighlight %}  
 
 ### Posting a comment
 
@@ -167,8 +166,8 @@ Success: 201
 
 #### POST Data
 
-````
- {
+{% highlight javascript %}
+  {
   "comment":{
     "content_attributes":{
       "body_html":"<p>Reply Comment</p>",
@@ -176,9 +175,9 @@ Success: 201
       "attachment_ids":[]
     }
   }
- } 
-````
-
+ }  
+{% endhighlight %}  
+ 
 The POST data must contain either "body" or "body_html". Take a looks at
 Attachment API to see how to upload attachments to SupportBee
 
@@ -186,8 +185,8 @@ Attachment API to see how to upload attachments to SupportBee
 
 POST /tickets/1/comments.json
 
-````
-{
+{% highlight javascript %}
+  {
   "comment":{
     "id":1,
     "created_at":"2012-01-20T04:13:26Z",
@@ -215,5 +214,5 @@ POST /tickets/1/comments.json
       "attachments":[]
     }
   }
-}
-````
+}  
+{% endhighlight %}  

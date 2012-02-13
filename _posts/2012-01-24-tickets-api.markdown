@@ -5,9 +5,6 @@ description: API to retrieve, create and search tickets
 categories: api_docs
 ---
 
-Tickets API
-===========
-
 ### Retrieving Tickets
 
 #### GET /tickets.json
@@ -88,8 +85,8 @@ Set to _label\_name_, retrieves only the tickets with the label _label\_name_
 
 GET /tickets.json?per_page=10&assigned_user=none&label=unaswered
 
-````
-{
+{% highlight javascript %}
+  {
   "total":1,
   "current_page":1,
   "per_page":10,
@@ -142,12 +139,12 @@ GET /tickets.json?per_page=10&assigned_user=none&label=unaswered
     }
   ]                  
 }
-````
+{% endhighlight %}  
 
 If the ticket is assigned to an agent then the ticket object in the response will contain 
 
-````
-"current_assignee":{
+{% highlight javascript %}
+  "current_assignee":{
   "user":{
     "id":19,
     "email":"person37@example.com",
@@ -163,12 +160,12 @@ If the ticket is assigned to an agent then the ticket object in the response wil
     }
   }
 }
-````
+{% endhighlight %}  
 
 If the ticket is assigned to a group then the ticket object in the response will contain 
 
-````
-"current_assignee":{
+{% highlight javascript %}
+  "current_assignee":{
   "group":{
     "id":1,
     "name":"Group 1",
@@ -181,9 +178,7 @@ If the ticket is assigned to a group then the ticket object in the response will
     }
   }
 }
-````
-
-
+{% endhighlight %}  
 
 #### Searching Tickets
 
@@ -232,8 +227,8 @@ The response is similar to ``GET /tickets.json``
 
 GET /tickets.json?per_page=10&query=SupportBee
 
-````
-{
+{% highlight javascript %}
+  {
   "total":1,
   "current_page":1,
   "per_page":10,
@@ -302,9 +297,7 @@ GET /tickets.json?per_page=10&query=SupportBee
     }
   ]                  
 }
-````
-
-
+{% endhighlight %}  
 
 ### Creating Tickets
 
@@ -324,8 +317,8 @@ Validation Errors: 400
 
 This specifies the data in JSON required to create a ticket. A sample JSON request object is 
 
-````
-{
+{% highlight javascript %}
+  {
   "ticket":{
     "subject" : "Subject",
     "requester_name": "John Doe",
@@ -336,8 +329,8 @@ This specifies the data in JSON required to create a ticket. A sample JSON reque
       "attachment_ids":[1240, 1241]
     }
   }
-}
-````
+}  
+{% endhighlight %}  
 
 **subject**
 
@@ -365,8 +358,8 @@ Specifies the attachments of the ticket. See Attachment API to upload attachment
 
 #### Example Response
 
-````
-"ticket":{
+{% highlight javascript %}
+  "ticket":{
   "id":1,
   "subject":"Welcome to SupportBee",
   "replies_count":0,
@@ -426,9 +419,8 @@ Specifies the attachments of the ticket. See Attachment API to upload attachment
       }
     ]
   }              
-}
-````
-
+} 
+{% endhighlight %}  
 
 ### Showing a Ticket
 
@@ -448,8 +440,8 @@ Not Found: 404
 
 GET /tickets/1.json
 
-````
-"ticket":{
+{% highlight javascript %}
+  "ticket":{
   "id":1,
   "subject":"Welcome to SupportBee",
   "replies_count":0,
@@ -510,4 +502,4 @@ GET /tickets/1.json
     ]
   }             
 }
-````
+{% endhighlight %}  

@@ -1,12 +1,10 @@
 ---
 layout: post
-title: SupportBee API
+title: Introduction
 description: Introduction to SupportBee API
 categories: api_docs
 ---
 
-Introduction
-============
 REST API for SupportBee. Response format is JSON
 
 

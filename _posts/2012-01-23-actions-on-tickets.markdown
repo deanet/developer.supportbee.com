@@ -6,7 +6,7 @@ categories: api_docs
 ---
 
 Archiving / Un-Archiving Tickets
-===============================
+--------------------------------
 
 ### Archiving Tickets
 
@@ -44,7 +44,7 @@ Response is Success with no body
 
 
 Assigning tickets to a User/Group
-=================================
+---------------------------------
 
 Assigning a ticket to a User or Group involves make a POST call to the
 same resource URL but different POST data
@@ -63,7 +63,7 @@ Validation Error: 400
 
 #### POST Data
 
-{% highlight json %}
+{% highlight javascript %}
   {
     "assignment" : {
       "user_id" : 1
@@ -74,7 +74,7 @@ Validation Error: 400
 
 #### Response
 
-{% highlight json %}
+{% highlight javascript %}
   {
     "assignment":{
       "id":2,
@@ -105,7 +105,7 @@ Validation Error: 400
 #### POST Data
 
 
-{% highlight json %}
+{% highlight javascript %}
   {
     "assignment" : {
       "group_id" : 1
@@ -115,7 +115,7 @@ Validation Error: 400
 
 #### Response
 
-{% highlight json %}
+{% highlight javascript %}
   {
     "assignment":{
       "id":2,
@@ -142,7 +142,7 @@ Validation Error: 400
 
 
 Starring / Unstarring Tickets
-===============================
+-----------------------------
 
 ### Starring Tickets
 
@@ -179,7 +179,7 @@ DELETE /tickets/1/star.json
 Response is Success with no body
 
 Spamming / Un-Spamming Tickets
-===============================
+------------------------------
 
 ### Spamming Tickets
 
@@ -216,7 +216,7 @@ DELETE /tickets/1/spam.json
 Response is Success with no body
 
 Trashing / Un-Trashing Tickets
-===============================
+------------------------------
 
 ### Trashing Tickets
 

@@ -6,6 +6,9 @@
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/waypoints.min.js"></script>
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,30 +45,45 @@
     <div class="container">
 
       <div class="row">
-        <div class="sidebar span4">
-          <ul class="posts">
-            {% for post in site.categories.api_docs %}
-              <li>
-                <a href="#{{ post.id }}">{{ post.title }}</a> 
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
 
-        <div class="content span10 offset4">
+        <div class="content span10">
           {{ content }}
-        </div>
 
-        <footer>
+          <footer>
           <p>&copy; {{ site.author.name }} 2012 
             with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
             and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
           </p>
         </footer>
+        </div>
+
+        <div class="sidebar span4 offset11">
+          <ul class="posts">
+            {% for post in site.categories.api_docs %}
+              <li>
+                <a href="#{{ post.id }}" rel="{{ post.id }}">{{ post.title }}</a> 
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
 
     </div> <!-- /container -->
 
     {% include JB/analytics %}
+    <script type="text/javascript">
+      $(document).ready(function(){
+        select_li($('.sidebar ul li:first'));
+
+        $('.section').waypoint(function(){
+          select_li($('.sidebar ul a[rel="'+ $(this).attr('id') +'"]').parent('li'));
+        });
+
+        function select_li(li){
+            $('.sidebar ul li').removeClass("active");
+            li.addClass("active");
+          }
+      });
+    </script>
   </body>
 </html>
