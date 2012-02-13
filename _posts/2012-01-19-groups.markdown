@@ -20,7 +20,7 @@ If _true_, retrieves only the groups with users in them
 
 GET /groups.json
 
-{% highlight json %}
+{% highlight javascript %}
   {
   "groups":[
     {

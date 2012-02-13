@@ -14,7 +14,7 @@ categories: api_docs
 
 GET /tickets/1/replies.json
 
-{% highlight json %}
+{% highlight javascript %}
 {
   "replies":[
     {

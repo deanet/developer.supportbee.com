@@ -21,7 +21,7 @@ Faliure: 500
 
 GET /labels.json
 
-{% highlight json %}
+{% highlight javascript %}
   {
   "labels":[
     {
@@ -46,7 +46,7 @@ Success: 201
 
 POST /tickets/1/labels/2.json
 
-{% highlight json %}
+{% highlight javascript %}
   {
   "label":{
     "id":2,

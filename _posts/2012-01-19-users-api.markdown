@@ -22,7 +22,7 @@ Success: 200
 
 GET /users.json
 
-{% highlight json %}
+{% highlight javascript %}
   {
   "users":[
     {
@@ -53,7 +53,7 @@ GET /users.json
 
 GET /users/1.json
 
-{% highlight json %}
+{% highlight javascript %}
   {
   "user":{
     "id":1,
