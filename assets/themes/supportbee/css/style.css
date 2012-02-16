@@ -12,20 +12,17 @@ code{
   background: none;
   color: #fff;
 }
-.container > footer p {
+.container_body > footer p {
   text-align: center; /* center align it with the container */
 }
-.container {
+.container_body {
   width: 840px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
 }
 
-/* The white background content wrapper */
-.content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  border: none;
+.fill {
+background-color: #3A3A3A;
 }
+/* The white background content wrapper */
 
 .content .posts h1
  { 
