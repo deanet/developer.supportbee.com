@@ -5,13 +5,14 @@ description: Introduction to SupportBee API
 categories: api_docs
 ---
 
-REST API for SupportBee. Response format is JSON
-
+REST API for SupportBee. Response format is JSON.
 
 
 ## Error Codes
 
 Success:            200
+
+Created:			201
 
 Failure:            500
 
@@ -33,6 +34,6 @@ All API calls require Authentication except:
 
 ## API endpoint
 
-### https://&lt;company_name&gt;.supportbee.com/
+### https://*company*.supportbee.com/
 
 All API calls must be through a company

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attachments
+title: Snippets
 description: API to add Attachments to SupportBee
 categories: api_docs
 ---

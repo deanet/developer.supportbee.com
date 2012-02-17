@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Actions on Tickets
+layout: post
+title: Ticket Actions
 description: Describes the Actions on a ticket
 categories: api_docs
 ---

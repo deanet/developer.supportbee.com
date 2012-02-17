@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessing Groups 
+title: Groups 
 description: Retrieving Groups of a company
 categories: api_docs
 ---

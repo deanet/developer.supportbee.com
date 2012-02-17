@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Answering and Commenting on a Ticket
+title: Replying and Commenting on a Ticket
 description: Adding Comments and Replies to Ticket
 categories: api_docs
 ---

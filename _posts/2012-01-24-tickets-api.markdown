@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessing Tickets
+title: Tickets
 description: API to retrieve, create and search tickets
 categories: api_docs
 ---
@@ -186,7 +186,7 @@ If the ticket is assigned to a group then the ticket object in the response will
 
 *returns 15 tickets of the company in the order of their last activity matching the search query*
 
-#### Error Codes
+#### Status Codes
 
 Success: 200
 
@@ -428,7 +428,7 @@ Specifies the attachments of the ticket. See Attachment API to upload attachment
 
 *Retrieves the ticket specified by the _id_*
 
-#### Error Codes
+#### Status Codes
 
 Success: 200
 

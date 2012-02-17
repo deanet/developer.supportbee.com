@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Labels
+title: Labels
 description: Describes actions retrieving labels of a company, Adding a label to a ticket and Removing a label from a ticket
 categories: api_docs
 ---

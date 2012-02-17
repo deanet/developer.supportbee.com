@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessing Users
+title: Users
 description: API to retrieve agents and user info
 categories: api_docs
 ---
