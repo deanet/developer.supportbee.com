@@ -5,7 +5,8 @@ description: Adding Comments and Replies to Ticket
 categories: api_docs
 ---
 
-### Retriving Replies
+Retriving Replies
+-----------------
 #### GET /tickets/_ticket\_id/replies.json
 *Retrieves all the replies of the ticket with id _ticket\_id_*
 
@@ -48,7 +49,8 @@ GET /tickets/1/replies.json
 }
 {% endhighlight %} 
 
-### Posting a reply
+Posting a Reply
+---------------
 #### POST /tickets/_ticket\_id_/replies.json
 *Posts a reply to the ticket with id _ticket\_id_*
 
@@ -109,7 +111,8 @@ POST /tickets/1/replies.json
 }
 {% endhighlight %}  
 
-### Retriving Comments
+Retriving Comments
+------------------
 #### GET /tickets/_ticket\_id/comments.json
 *Retrieves all the comments of the ticket with id _ticket\_id_*
 
@@ -150,7 +153,8 @@ GET /tickets/1/comments.json
 }  
 {% endhighlight %}  
 
-### Posting a comment
+Posting a Comment
+-----------------
 #### POST /tickets/_ticket\_id_/comments.json
 *Posts a comment to the ticket with id _ticket\_id_*
 

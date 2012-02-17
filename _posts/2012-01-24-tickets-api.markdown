@@ -5,7 +5,8 @@ description: API to retrieve, create and search tickets
 categories: api_docs
 ---
 
-### Retrieving Tickets
+Retrieving Tickets
+------------------
 #### GET /tickets.json
 *returns 15 tickets of the company in the order of their last activity*
 
@@ -151,7 +152,8 @@ If the ticket is assigned to a group then the ticket object in the response will
 }
 {% endhighlight %}  
 
-### Searching Tickets
+Searching Tickets
+-----------------
 #### GET /tickets/search.json
 *returns 15 tickets of the company in the order of their last activity matching the search query*
 
@@ -254,7 +256,8 @@ GET /tickets.json?per_page=10&query=SupportBee
 }
 {% endhighlight %}  
 
-### Creating Tickets
+Creating a Ticket
+-----------------
 #### POST /tickets.json
 *Creates a ticket for the company*
 
@@ -363,7 +366,8 @@ Specifies the attachments of the ticket. See Attachment API to upload attachment
 } 
 {% endhighlight %}  
 
-### Showing a Ticket
+Showing a Ticket
+----------------
 #### GET /tickets/_id_.json
 *Retrieves the ticket specified by the _id_*
 

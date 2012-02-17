@@ -5,7 +5,8 @@ description: Retrieving Groups of a company
 categories: api_docs
 ---
 
-### Retrieving Groups of a Company
+Retrieving Groups of a Company
+------------------------------
 #### GET /groups.json
 *Retrieves all the groups of the company*
 

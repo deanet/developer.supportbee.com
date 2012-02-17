@@ -5,7 +5,8 @@ description: API to retrieve agents and user info
 categories: api_docs
 ---
 
-### Retrieve Confirmed Agents of a company
+Retrieve Confirmed Agents of a company
+--------------------------------------
 #### GET /users.json
 *Retrieves all confirmed agents of the company*
 
@@ -35,7 +36,8 @@ GET /users.json
   }
 {% endhighlight %}  
 
-### Retrieve info about a specific User
+Retrieve info about a specific User
+-----------------------------------
 #### GET /users/:id
 *Retrieves info about the user with id _id_*
 

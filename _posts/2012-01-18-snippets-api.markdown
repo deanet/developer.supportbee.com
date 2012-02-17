@@ -5,10 +5,9 @@ description: Snippets API
 categories: api_docs
 ---
 
-### Retrieving Snippets
-
+Retrieving Snippets
+-------------------
 #### GET /snippets.json
-
 *returns all the snippets of the company*
 
 #### Status Codes
@@ -31,7 +30,8 @@ GET /snippets.json
   }
 {% endhighlight %}
 
-### Creating a Snippet
+Creating a Snippet
+------------------
 #### POST /snippets.json
 *creates a snippet for the company*
 
@@ -81,7 +81,8 @@ Specifies the tags for the snippet.
   }
 {% endhighlight %}
 
-### Updating a Snippet
+Updating a Snippet
+------------------
 #### PUT /snippet/_id_.json
 *updates a snippet with id _id_*
 
@@ -95,7 +96,8 @@ Same as POST Data for creating a snippet.
 #### Example Response
 Same as the response for creating a snippet.
 
-### Deleting a Snippet
+Deleting a Snippet
+------------------
 #### DELETE /snippets/_id_.json
 *Deletes a snippet with id: _id_*
 
