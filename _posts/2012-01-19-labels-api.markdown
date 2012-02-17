@@ -28,8 +28,8 @@ GET /labels.json
 
 Add a label to a ticket
 -----------------------
-#### POST /tickets/_ticket\_id_/labels/_label\_id_.json
-*Adds the label with _label\_id_ to the ticket with id _ticket\_id_*
+#### POST /tickets/{ticket\_id}/labels/{label\_id}.json
+*Adds the label with {label\_id} to the ticket with id {ticket\_id}*
 
 #### Status Codes
 Success: 201
@@ -48,8 +48,8 @@ POST /tickets/1/labels/2.json
 
 Remove a label to a ticket
 --------------------------
-#### DELETE /tickets/_ticket\_id_/labels/_label\_id_.json
-*Removes the label with _label\_id_ to the ticket with id _ticket\_id_*
+#### DELETE /tickets/{ticket\_id}/labels/{label\_id}.json
+*Removes the label with {label\_id} to the ticket with id {ticket\_id}*
 
 #### Status Codes
 Success: 204

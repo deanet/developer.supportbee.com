@@ -19,5 +19,5 @@ Authentication is through **Token Authentication**. An agent/admin can find his/
 All API calls require Authentication except for **Creating Tickets**
 
 ## API endpoint
-### https://*company*.supportbee.com/
+### https://{company}.supportbee.com/
 All API calls must be through a company

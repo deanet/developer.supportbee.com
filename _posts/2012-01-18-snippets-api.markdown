@@ -83,8 +83,8 @@ Specifies the tags for the snippet.
 
 Updating a Snippet
 ------------------
-#### PUT /snippet/_id_.json
-*updates a snippet with id _id_*
+#### PUT /snippet/{id}.json
+*updates a snippet with id {id}*
 
 #### Status Codes
 Success: 200
@@ -98,8 +98,8 @@ Same as the response for creating a snippet.
 
 Deleting a Snippet
 ------------------
-#### DELETE /snippets/_id_.json
-*Deletes a snippet with id: _id_*
+#### DELETE /snippets/{id}.json
+*Deletes a snippet with id: {id}*
 
 #### Status Codes
 Success: 204  

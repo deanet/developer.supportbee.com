@@ -8,8 +8,8 @@ categories: api_docs
 Archiving / Un-Archiving Tickets
 --------------------------------
 ### Archiving Tickets
-#### POST /tickets/_ticket\_id_/archive.json
-*Archives an unarchived ticket*
+#### POST /tickets/{ticket\_id}/archive.json
+*Archives an unarchived ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204  
@@ -19,8 +19,8 @@ POST /tickets/1/archive.json
 Response is Success with no body
 
 ### Un-Archiving Tickets
-#### DELETE /tickets/_ticket\_id_/archive.json
-*Un-archives an archived ticket*
+#### DELETE /tickets/{ticket\_id}/archive.json
+*Un-archives an archived ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204  
@@ -34,7 +34,7 @@ Assigning tickets to a User/Group
 Assigning a ticket to a User or Group involves make a POST call to the
 same resource URL but different POST data
 
-#### POST /tickets/_ticket\_id_/assignments.json
+#### POST /tickets/{ticket\_id}/assignments.json
 
 #### Status Code
 Success: 201  
@@ -127,8 +127,8 @@ Starring / Unstarring Tickets
 
 ### Starring Tickets
 
-#### POST /tickets/_ticket\_id_/star.json
-*Stars' an unstarred ticket*
+#### POST /tickets/{ticket\_id}/star.json
+*Stars' an unstarred ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204  
@@ -138,8 +138,8 @@ POST /tickets/1/star.json
 Response is Success with no body
 
 ### Unrchiving Tickets
-#### DELETE /tickets/_ticket\_id_/star.json
-*Un-stars' a starred ticket*
+#### DELETE /tickets/{ticket\_id}/star.json
+*Un-stars' a starred ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204  
@@ -152,8 +152,8 @@ Spamming / Un-Spamming Tickets
 ------------------------------
 
 ### Spamming Tickets
-#### POST /tickets/_ticket\_id_/spam.json
-*Spams' an un-spammed ticket*
+#### POST /tickets/{ticket\_id}/spam.json
+*Spams' an un-spammed ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204
@@ -163,8 +163,8 @@ POST /tickets/1/spam.json
 Response is Success with no body
 
 ### Un-Spamming Tickets
-#### DELETE /tickets/_ticket\_id_/spam.json
-*Un-spams' a spammed ticket*
+#### DELETE /tickets/{ticket\_id}/spam.json
+*Un-spams' a spammed ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204
@@ -177,8 +177,8 @@ Trashing / Un-Trashing Tickets
 ------------------------------
 
 ### Trashing Tickets
-#### POST /tickets/_ticket\_id_/trash.json
-*Trashes' an un-trashed ticket*
+#### POST /tickets/{ticket\_id}/trash.json
+*Trashes' an un-trashed ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204
@@ -188,8 +188,8 @@ POST /tickets/1/trash.json
 Response is Success with no body
 
 ### Un-Trashing Tickets
-#### DELETE /tickets/_ticket\_id_/trash.json
-*Un-trashes' a trashed ticket*
+#### DELETE /tickets/{ticket\_id}/trash.json
+*Un-trashes' a trashed ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204

@@ -38,8 +38,8 @@ GET /users.json
 
 Retrieve info about a specific User
 -----------------------------------
-#### GET /users/:id
-*Retrieves info about the user with id _id_*
+#### GET /users/{id}.json
+*Retrieves info about the user with id {id}*
 
 #### Example
 GET /users/1.json

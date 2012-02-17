@@ -368,8 +368,8 @@ Specifies the attachments of the ticket. See Attachment API to upload attachment
 
 Showing a Ticket
 ----------------
-#### GET /tickets/_id_.json
-*Retrieves the ticket specified by the _id_*
+#### GET /tickets/{id}.json
+*Retrieves the ticket specified by the {id}*
 
 #### Status Codes
 Success: 200  

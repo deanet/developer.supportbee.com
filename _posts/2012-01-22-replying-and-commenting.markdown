@@ -7,8 +7,8 @@ categories: api_docs
 
 Retriving Replies
 -----------------
-#### GET /tickets/_ticket\_id/replies.json
-*Retrieves all the replies of the ticket with id _ticket\_id_*
+#### GET /tickets/{ticket\_id}/replies.json
+*Retrieves all the replies of the ticket with id {ticket\_id}*
 
 ### Example
 GET /tickets/1/replies.json
@@ -51,8 +51,8 @@ GET /tickets/1/replies.json
 
 Posting a Reply
 ---------------
-#### POST /tickets/_ticket\_id_/replies.json
-*Posts a reply to the ticket with id _ticket\_id_*
+#### POST /tickets/{ticket\_id}/replies.json
+*Posts a reply to the ticket with id {ticket\_id}*
 
 #### Status Code
 Success: 201
@@ -113,8 +113,8 @@ POST /tickets/1/replies.json
 
 Retriving Comments
 ------------------
-#### GET /tickets/_ticket\_id/comments.json
-*Retrieves all the comments of the ticket with id _ticket\_id_*
+#### GET /tickets/{ticket\_id}/comments.json
+*Retrieves all the comments of the ticket with id {ticket\_id}*
 
 ### Example
 GET /tickets/1/comments.json
@@ -155,8 +155,8 @@ GET /tickets/1/comments.json
 
 Posting a Comment
 -----------------
-#### POST /tickets/_ticket\_id_/comments.json
-*Posts a comment to the ticket with id _ticket\_id_*
+#### POST /tickets/{ticket\_id}/comments.json
+*Posts a comment to the ticket with id {ticket\_id}*
 
 #### Status Code
 Success: 201
