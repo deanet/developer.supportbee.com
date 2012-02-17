@@ -55,9 +55,7 @@ If _false_, retrieves only the non starred tickets assigned to the current user
 Set to _label\_name_, retrieves only the tickets with the label _label\_name_
 
 #### Example
-
 GET /tickets.json?per_page=10&assigned_user=none&label=unaswered
-
 {% highlight javascript %}
   {
   "total":1,
