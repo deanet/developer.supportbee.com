@@ -72,7 +72,7 @@ Success: 201
 {% endhighlight %}  
 
 The POST data must contain either "body" or "body_html". Take a looks at
-Attachment API to see how to upload attachments to SupportBee
+[Attachment API] (#/api_docs/2012/01/19/attachments-api) to see how to upload attachments to SupportBee
 
 #### Example
 POST /tickets/1/replies.json
@@ -176,7 +176,7 @@ Success: 201
 {% endhighlight %}  
  
 The POST data must contain either "body" or "body_html". Take a looks at
-Attachment API to see how to upload attachments to SupportBee
+[Attachment API] (#/api_docs/2012/01/19/attachments-api) to see how to upload attachments to SupportBee
 
 #### Example
 POST /tickets/1/comments.json
