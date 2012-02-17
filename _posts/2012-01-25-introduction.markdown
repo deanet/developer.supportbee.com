@@ -7,33 +7,18 @@ categories: api_docs
 
 REST API for SupportBee. Response format is JSON.
 
-
 ## Error Codes
-
-Success:            200
-
-Created:			201
-
-Failure:            500
-
-Access Denied:      401
-
+Success:            200  
+Created:			201  
+Failure:            500  
+Access Denied:      401  
 Validation Failure: 400
 
-
-
 ## Authentication 
-
-through **Token Authentication**
-
-All API calls require Authentication except:
-
+through **Token Authentication**  
+All API calls require Authentication except:  
 * Creating Tickets
 
-
-
 ## API endpoint
-
 ### https://*company*.supportbee.com/
-
 All API calls must be through a company

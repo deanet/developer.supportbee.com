@@ -6,20 +6,15 @@ categories: api_docs
 ---
 
 ### Retrieving Groups of a Company
-
 #### GET /groups.json
 *Retrieves all the groups of the company*
 
 #### Parameters
-
-*with_users*
-
+*with_users*  
 If _true_, retrieves only the groups with users in them
 
 #### Example
-
 GET /groups.json
-
 {% highlight javascript %}
   {
   "groups":[
@@ -37,4 +32,3 @@ GET /groups.json
   ]
   }
 {% endhighlight %}  
-

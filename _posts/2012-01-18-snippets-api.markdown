@@ -1,11 +1,16 @@
 ---
 layout: post
 title: Snippets
-description: API to add Attachments to SupportBee
+description: Snippets API
 categories: api_docs
 ---
 
-#### POST /attachments.json
+### Retrieving Snippets
 
-#### POST data
+#### GET /snippets.json
+
+*returns all the snippets of the company*
+
+#### Status Codes
+Success: 200
 

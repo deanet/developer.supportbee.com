@@ -6,79 +6,52 @@ categories: api_docs
 ---
 
 ### Retrieving Tickets
-
 #### GET /tickets.json
-
 *returns 15 tickets of the company in the order of their last activity*
 
 #### Status Codes
-
 Success: 200
 
-Failure: 500
-
 #### Parameters
-
-**per_page (optional)**
-
-Specifies the number of tickets to retrieve. 
-
-Must be less than 100. 
-
+**per_page (optional)**  
+Specifies the number of tickets to retrieve.  
+Must be less than 100.  
 Defaults to 15
 
-**page (optional)**
-
-Specifies the page of tickets to retrieve.
-
+**page (optional)**  
+Specifies the page of tickets to retrieve.  
 Defaults to 1
 
-**spam (optional)**
-
-If _true_, retrieved tickets contain tickets marked as spam.
-
+**spam (optional)**  
+If _true_, retrieved tickets contain tickets marked as spam.  
 Defaults to false
 
-**trash (optional)**
-
-If _true_, retrieved tickets contain tickets that are trashed.
-
+**trash (optional)**  
+If _true_, retrieved tickets contain tickets that are trashed.  
 Defaults to false
 
-**replies (optional)**
-
-If _true_, retrieved tickets contain only tickets with replies.
-
+**replies (optional)**  
+If _true_, retrieved tickets contain only tickets with replies.  
 If _false_, retrieved tickets contain only tickets without replies.
 
-**max_replies (optional)**
-
-Specifies the number of replies that a ticket must have.
-
+**max_replies (optional)**  
+Specifies the number of replies that a ticket must have.  
 This cannot be used with _replies = false_
 
-**assigned_user (optional)**
-
-If _me_, retrieves only the tickets assigned to the current user
-
-If _agent\_id_, retrieves only the tickets assigned to the Agent with id _agent\_id_
-
+**assigned_user (optional)**  
+If _me_, retrieves only the tickets assigned to the current user.  
+If _agent\_id_, retrieves only the tickets assigned to the Agent with id _agent\_id_  
 If _none_, retrieves only the unassigned tickets
 
-**assigned_group (optional)**
-
-If _mine_, retrieves all the tickets assigned to all the groups of the current user
-
+**assigned_group (optional)**  
+If _mine_, retrieves all the tickets assigned to all the groups of the current user  
 If _group\_id_, retrieves only the tickets assigned to the group with id _group\_id_
 
-**starred (optional)**
-
-If _true_, retrieves only the starred tickets of the current user
-
+**starred (optional)**  
+If _true_, retrieves only the starred tickets of the current user  
 If _false_, retrieves only the non starred tickets assigned to the current user
 
-**label (optional)**
-
+**label (optional)**  
 Set to _label\_name_, retrieves only the tickets with the label _label\_name_
 
 #### Example
@@ -180,45 +153,29 @@ If the ticket is assigned to a group then the ticket object in the response will
 }
 {% endhighlight %}  
 
-#### Searching Tickets
-
-### GET /tickets/search.json
-
+### Searching Tickets
+#### GET /tickets/search.json
 *returns 15 tickets of the company in the order of their last activity matching the search query*
 
 #### Status Codes
-
-Success: 200
-
-Failure: 500
-
+Success: 200  
 Query Missing: 400
 
-
 #### Parameters
-
-**query**
-
+**query**  
 Specifies the query or keywords to searched
 
-**per_page (optional)**
-
-Specifies the number of tickets to retrieve. 
-
-Must be less than 100. 
-
+**per_page (optional)**  
+Specifies the number of tickets to retrieve.  
+Must be less than 100.  
 Defaults to 15
 
-**page (optional)**
-
-Specifies the page of tickets to retrieve.
-
+**page (optional)**  
+Specifies the page of tickets to retrieve.  
 Defaults to 1
 
-**spam (optional)**
-
-If _true_, retrieved tickets contain tickets marked as spam.
-
+**spam (optional)**  
+If _true_, retrieved tickets contain tickets marked as spam.  
 Defaults to false
 
 #### Example
@@ -300,21 +257,14 @@ GET /tickets.json?per_page=10&query=SupportBee
 {% endhighlight %}  
 
 ### Creating Tickets
-
 #### POST /tickets.json
-
 *Creates a ticket for the company*
 
 #### Status Codes
-
-Success: 201
-
-Failure: 500
-
+Success: 201  
 Validation Errors: 400
 
 #### Post Data
-
 This specifies the data in JSON required to create a ticket. A sample JSON request object is 
 
 {% highlight javascript %}
@@ -332,28 +282,21 @@ This specifies the data in JSON required to create a ticket. A sample JSON reque
 }  
 {% endhighlight %}  
 
-**subject**
-
-Specifies the subject of the ticket.
-
+**subject**  
+Specifies the subject of the ticket.  
 Required
 
-**requester_name**
-
-Specifies the name of the requester of the ticket.
-
+**requester_name**  
+Specifies the name of the requester of the ticket.  
 Required
 
-**requester_email**
-
+**requester_email**  
 Specifies the email of the requester of the ticket.
 
-**body/body_html**
-
+**body/body_html**  
 Specifies the content of the ticket. Either body or body_html must be present
 
-**attachment_ids**
-
+**attachment_ids**  
 Specifies the attachments of the ticket. See Attachment API to upload attachments to SupportBee
 
 #### Example Response
@@ -423,21 +366,14 @@ Specifies the attachments of the ticket. See Attachment API to upload attachment
 {% endhighlight %}  
 
 ### Showing a Ticket
-
 #### GET /tickets/_id_.json
-
 *Retrieves the ticket specified by the _id_*
 
 #### Status Codes
-
-Success: 200
-
-Failure: 500
-
+Success: 200  
 Not Found: 404
 
 #### Example 
-
 GET /tickets/1.json
 
 {% highlight javascript %}

@@ -6,12 +6,10 @@ categories: api_docs
 ---
 
 ### Retriving Replies
-
 #### GET /tickets/_ticket\_id/replies.json
 *Retrieves all the replies of the ticket with id _ticket\_id_*
 
 ### Example
-
 GET /tickets/1/replies.json
 
 {% highlight javascript %}
@@ -51,7 +49,6 @@ GET /tickets/1/replies.json
 {% endhighlight %} 
 
 ### Posting a reply
-
 #### POST /tickets/_ticket\_id_/replies.json
 *Posts a reply to the ticket with id _ticket\_id_*
 
@@ -76,7 +73,6 @@ The POST data must contain either "body" or "body_html". Take a looks at
 Attachment API to see how to upload attachments to SupportBee
 
 #### Example
-
 POST /tickets/1/replies.json
 
 {% highlight javascript %}
@@ -114,12 +110,10 @@ POST /tickets/1/replies.json
 {% endhighlight %}  
 
 ### Retriving Comments
-
 #### GET /tickets/_ticket\_id/comments.json
 *Retrieves all the comments of the ticket with id _ticket\_id_*
 
 ### Example
-
 GET /tickets/1/comments.json
 
 {% highlight javascript %}
@@ -157,7 +151,6 @@ GET /tickets/1/comments.json
 {% endhighlight %}  
 
 ### Posting a comment
-
 #### POST /tickets/_ticket\_id_/comments.json
 *Posts a comment to the ticket with id _ticket\_id_*
 
@@ -182,7 +175,6 @@ The POST data must contain either "body" or "body_html". Take a looks at
 Attachment API to see how to upload attachments to SupportBee
 
 #### Example
-
 POST /tickets/1/comments.json
 
 {% highlight javascript %}

@@ -6,19 +6,14 @@ categories: api_docs
 ---
 
 ### Retrieve Confirmed Agents of a company
-
 #### GET /users.json
-
 *Retrieves all confirmed agents of the company*
 
 #### Status Codes
-
 Success: 200
 
 #### Example
-
 GET /users.json
-
 {% highlight javascript %}
   {
   "users":[
@@ -41,15 +36,11 @@ GET /users.json
 {% endhighlight %}  
 
 ### Retrieve info about a specific User
-
 #### GET /users/:id
-
 *Retrieves info about the user with id _id_*
 
 #### Example
-
 GET /users/1.json
-
 {% highlight javascript %}
   {
   "user":{
