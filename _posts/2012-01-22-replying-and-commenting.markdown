@@ -5,7 +5,7 @@ description: Adding Comments and Replies to Ticket
 categories: api_docs
 ---
 
-Retriving Replies
+Retrieving Replies
 -----------------
 #### GET /tickets/{ticket\_id}/replies.json
 *Retrieves all the replies of the ticket with id {ticket\_id}*

@@ -122,13 +122,13 @@ Validation Error: 400
 {% endhighlight %}
 
 
-Starring / Unstarring Tickets
+Staring / Unstaring Tickets
 -----------------------------
 
 ### Starring Tickets
 
 #### POST /tickets/{ticket\_id}/star.json
-*Stars' an unstarred ticket specified by {ticket\_id}*
+*Stars' an un-stared ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204  
@@ -139,7 +139,7 @@ Response is Success with no body
 
 ### Unrchiving Tickets
 #### DELETE /tickets/{ticket\_id}/star.json
-*Un-stars' a starred ticket specified by {ticket\_id}*
+*Un-stars' a stared ticket specified by {ticket\_id}*
 
 #### Status Codes
 Success: 204  
