@@ -14,9 +14,15 @@ Failure:            **500**
 Access Denied:      **401**  
 Validation Failure: **400**
 
-## Authentication 
-Authentication is through **Token Authentication**. An agent/admin can find his/her API token in *Settings > API Token* screen.  
-All API calls require Authentication except for **Creating Tickets**
+## Authentication
+Authentication is thourgh **Token Authentication**.  
+
+The key to pass the
+authentication token is **auth_token**  
+For Example **https://{company}.supportbee.com/users.json?auth_token=_ABSCDFEESDSD**  
+
+An agent/admin can find his/her API token in *Settings > API Token* screen.  
+All API calls require Authentication except for  **Creating Tickets**
 
 ## API endpoint
 ### https://{company}.supportbee.com/
