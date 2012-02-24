@@ -15,7 +15,7 @@ Access Denied:      **401**
 Validation Failure: **400**
 
 ## Authentication
-Authentication is thourgh **Token Authentication**.  
+Authentication is using **Token Authentication**.  
 
 The key to pass the
 authentication token is **auth_token**  
