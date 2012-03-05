@@ -14,6 +14,10 @@ Retrieving Groups of a Company
 *with_users*  
 If _true_, retrieves only the groups with users in them
 
+*user*  
+When _me_, retrives only the groups of the current user. All other
+values passed to this parameter is ignored
+
 #### Example
 GET /groups.json
 {% highlight javascript %}
