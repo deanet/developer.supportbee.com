@@ -55,6 +55,14 @@ If _false_, retrieves only the non starred tickets assigned to the current user
 **label (optional)**  
 Set to _label\_name_, retrieves only the tickets with the label _label\_name_
 
+**since (optional)**  
+Can be used to retrieve tickets whose last activity (creation, assignment etc) is older than the time specified in this parameter  
+See [here] (#date_format) for the accepted date/time formats  
+
+**until (optional)**  
+Can be used to retrieve tickets whose last activity (creation, assignment etc) is newer than the time specified in this parameter  
+See [here] (#date_format) for the accepted date/time formats 
+
 #### Example
 GET /tickets.json?per_page=10&assigned_user=none&label=unaswered
 {% highlight javascript %}
