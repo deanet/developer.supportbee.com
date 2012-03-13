@@ -205,7 +205,7 @@ Search for tickets that matches a rule
 #### GET /filters/search.json  
 *Retrives the tickets matching the rule in the last 100 tickets*
 
-### Get Data  
+#### Get Data  
 This specifies the data in JSON required to create a consequence. A sample JSON request object is  
 
 {% highlight javascript %}
