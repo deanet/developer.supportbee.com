@@ -49,6 +49,50 @@ GET /tickets/1/replies.json
 }
 {% endhighlight %} 
 
+**IMPORTANT**: The key *content* in the above response is only present in the last outgoing reply and replies after that. If you want the content of a particular reply, use the API call discussed in the next section.
+
+Retrive a Single Reply
+----------------------
+#### GET /tickets/{ticket\_id}/replies/{id}.json
+*Retrives a reply with id {id}*
+
+### Example
+GET /tickets/1/replies/1.json
+
+{% highlight javascript %}
+{
+  "reply":{
+      "id":1,
+      "created_at":"2012-01-20T03:45:51Z",
+      "summary":"Reply Content",
+      "cc":[],
+      "ticket":{
+        "replies_count":2,
+        "comments_count":0
+      },
+      "replier":{
+        "id":1,
+        "email":"person2@example.com",
+        "name":"Agent,1",
+        "agent":true,
+        "picture":{
+          "thumb20":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=20",
+          "thumb24":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=24",
+          "thumb32":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=32",
+          "thumb48":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=48",
+          "thumb64":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=64",
+          "thumb128":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=128"
+        }
+      },
+      "content":{
+        "body":"Reply Content",
+        "html":null,
+        "attachments":[]
+      }
+    }
+}
+{% endhighlight %} 
+
 Posting a Reply
 ---------------
 #### POST /tickets/{ticket\_id}/replies.json
