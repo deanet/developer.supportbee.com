@@ -49,7 +49,7 @@ GET /tickets/1/replies.json
 }
 {% endhighlight %} 
 
-**IMPORTANT**: The key *content* in the above response is only present in the last outgoing reply and replies after that. If you want the content of a particular reply, use the API call discussed in the next section.
+**IMPORTANT**: The key *content* in the above response is only present in the last agent reply and replies after that. If you want the *contents* of a particular reply, use the API call discussed in the next section.
 
 Retrive a Single Reply
 ----------------------
