@@ -122,10 +122,10 @@ Validation Error: 400
 {% endhighlight %}
 
 
-Staring / Unstaring Tickets
+Staring / Un-Staring Tickets
 -----------------------------
 
-### Starring Tickets
+### Staring Tickets
 
 #### POST /tickets/{ticket\_id}/star.json
 *Stars' an un-stared ticket specified by {ticket\_id}*
@@ -137,7 +137,7 @@ Success: 204
 POST /tickets/1/star.json  
 Response is Success with no body
 
-### Unrchiving Tickets
+### Un-Staring Tickets
 #### DELETE /tickets/{ticket\_id}/star.json
 *Un-stars' a stared ticket specified by {ticket\_id}*
 
