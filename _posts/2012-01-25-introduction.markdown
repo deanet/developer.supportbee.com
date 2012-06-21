@@ -5,7 +5,9 @@ description: Introduction to SupportBee API
 categories: api_docs
 ---
 
-REST API for SupportBee. Response format is JSON.
+[SupportBee](http://supportbee.com) is a simple and snappy help desk software that doesn't kill your company's human face.
+
+This page documents the REST API for SupportBee. Response format is JSON.
 
 ## Error Codes
 Success:            **200**  
@@ -15,18 +17,17 @@ Access Denied:      **401**
 Validation Failure: **400**
 
 ## Authentication
-Authentication is using **Token Authentication**.  
+We use **Token Authentication**.  
 
 The key to pass the
 authentication token is **auth_token**  
-For Example **https://{company}.supportbee.com/users.json?auth_token=_ABSCDFEESDSD**  
+For example **https://{company}.supportbee.com/users.json?auth_token=your_auth_token**  
 
-An agent/admin can find his/her API token in *Settings > API Token* screen.  
-All API calls require Authentication except for  **Creating Tickets**
+You can find your API token in *Settings > API Token* screen.  
+All API calls except **Creating Tickets** require authentication 
 
 ## API endpoint
 ### https://{company}.supportbee.com/
-All API calls must be through a company
 
 ## Date Format
 
