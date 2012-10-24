@@ -47,8 +47,8 @@ This specifies the data in JSON required to create a snippet. A sample JSON requ
   "snippet":{
     "name" : "Facebook Link",
     "content_attributes":{
-      "body": "Facebook",
-      "body_html":"<p><a href=\"http://facebook.com\">Facebook</a></p>"
+      "text": "Facebook",
+      "html":"<p><a href=\"http://facebook.com\">Facebook</a></p>"
     },
     "tags": "facebook, link"
   }

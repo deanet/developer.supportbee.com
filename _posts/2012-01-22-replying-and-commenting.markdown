@@ -40,7 +40,7 @@ GET /tickets/1/replies.json
         }
       },
       "content":{
-        "body":"Reply Content",
+        "text":"Reply Content",
         "html":null,
         "attachments":[]
       }
@@ -62,16 +62,16 @@ Success: 201
 {% highlight javascript %}
   {
   "reply":{
-    "content_attributes":{
-      "body_html":"<p>Reply Content</p>",
-      "body": "Reply Content",
+    "content":{
+      "html":"<p>Reply Content</p>",
+      "text": "Reply Content",
       "attachment_ids":[]
     }
   }
  }  
 {% endhighlight %}  
 
-The POST data must contain either "body" or "body_html". Take a looks at
+The POST data must contain either "text" or "html". Take a looks at
 [Attachment API] (#/api_docs/2012/01/19/attachments-api) to see how to upload attachments to SupportBee
 
 #### Example
@@ -103,7 +103,7 @@ POST /tickets/1/replies.json
     }
   },
   "content":{
-    "body":"Reply Content",
+    "text":"Reply Content",
     "html": "<p>Reply Content</p>",
     "attachments":[]
   }
@@ -144,7 +144,7 @@ GET /tickets/1/comments.json
         }
       },
       "content":{
-        "body":"Reply Content",
+        "text":"Reply Content",
         "html":null,
         "attachments":[]
       }
@@ -166,16 +166,16 @@ Success: 201
 {% highlight javascript %}
   {
   "comment":{
-    "content_attributes":{
-      "body_html":"<p>Reply Comment</p>",
-      "body": "Reply Comment",
+    "content":{
+      "html":"<p>Reply Comment</p>",
+      "text": "Reply Comment",
       "attachment_ids":[]
     }
   }
  }  
 {% endhighlight %}  
  
-The POST data must contain either "body" or "body_html". Take a looks at
+The POST data must contain either "text" or "html". Take a looks at
 [Attachment API] (#/api_docs/2012/01/19/attachments-api) to see how to upload attachments to SupportBee
 
 #### Example
@@ -205,7 +205,7 @@ POST /tickets/1/comments.json
       }
     },
     "content":{
-      "body":"Comment Content",
+      "text":"Comment Content",
       "html": "<p>Comment Content</p>",
       "attachments":[]
     }

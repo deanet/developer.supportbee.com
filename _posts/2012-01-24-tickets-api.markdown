@@ -101,7 +101,7 @@ GET /tickets.json?per_page=10&assigned_user=none&label=unaswered
         }
       },        
       "content":{
-        "body":"test\n\n-- \nRegards,\nAgent",
+        "text":"test\n\n-- \nRegards,\nAgent",
         "html":"test<br><div><br></div>-- <br>Regards,<div>Agent</div>",
         "attachments":[
           {
@@ -244,7 +244,7 @@ GET /tickets.json?per_page=10&query=SupportBee
         }
       },  
       "content":{
-        "body":"test\n\n-- \nRegards,\nAgent",
+        "text":"test\n\n-- \nRegards,\nAgent",
         "html":"test<br><div><br></div>-- <br>Regards,<div>Agent</div>",
         "attachments":[
           {
@@ -282,9 +282,9 @@ This specifies the data in JSON required to create a ticket. A sample JSON reque
     "subject" : "Subject",
     "requester_name": "John Doe",
     "requester_email": "john@example.com",
-    "content_attributes":{
-      "body": "Creating a ticket",
-      "body_html":"<p>Creating a ticket</p>",
+    "content":{
+      "text": "Creating a ticket",
+      "html":"<p>Creating a ticket</p>",
       "attachment_ids":[1240, 1241]
     }
   }
@@ -356,7 +356,7 @@ Specifies the attachments of the ticket. See Attachment API to upload attachment
     }
   },            
   "content":{
-    "body":"test\n\n-- \nRegards,\nAgent",
+    "text":"test\n\n-- \nRegards,\nAgent",
     "html":"test<br><div><br></div>-- <br>Regards,<div>Agent</div>",
     "attachments":[
       {
@@ -432,7 +432,7 @@ GET /tickets/1.json
     }
   },            
   "content":{
-    "body":"test\n\n-- \nRegards,\nAgent",
+    "text":"test\n\n-- \nRegards,\nAgent",
     "html":"test<br><div><br></div>-- <br>Regards,<div>Agent</div>",
     "attachments":[
       {
