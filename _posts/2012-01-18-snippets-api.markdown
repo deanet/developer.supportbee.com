@@ -46,7 +46,7 @@ This specifies the data in JSON required to create a snippet. A sample JSON requ
   {
   "snippet":{
     "name" : "Facebook Link",
-    "content_attributes":{
+    "content":{
       "text": "Facebook",
       "html":"<p><a href=\"http://facebook.com\">Facebook</a></p>"
     },
@@ -59,8 +59,8 @@ This specifies the data in JSON required to create a snippet. A sample JSON requ
 Specifies the name of the snippet.
 Required
 
-**body/body_html**  
-Specifies the content of the snippet. Either body or body_html must be present
+**text/html**  
+Specifies the content of the snippet. Either text or html must be present
 
 **tags**
 Specifies the tags for the snippet.

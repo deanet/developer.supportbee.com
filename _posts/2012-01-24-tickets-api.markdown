@@ -190,7 +190,7 @@ Defaults to false
 
 The response is similar to ``GET /tickets.json``
 
-GET /tickets.json?per_page=10&query=SupportBee
+GET /tickets/search.json?per_page=10&query=SupportBee
 
 {% highlight javascript %}
   {
@@ -302,8 +302,8 @@ Required
 **requester_email**  
 Specifies the email of the requester of the ticket.
 
-**body/body_html**  
-Specifies the content of the ticket. Either body or body_html must be present
+**text/html**  
+Specifies the content of the ticket. Either text or html must be present
 
 **attachment_ids**  
 Specifies the attachments of the ticket. See Attachment API to upload attachments to SupportBee
